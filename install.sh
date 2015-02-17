@@ -21,15 +21,15 @@ echo -n "Choix: "
 read choix
 case "$choix" in
          1)
-            cat freespace/DomainUsers.txt | sed -e s/X_SERVEURTYPE/Amonecole/ >
-            /home/netlogon/scripts/groups
-            chmod 644 /home/netlogon/scripts/groups
+            cat freespace/DomainUsers.txt | sed -e s/X_SERVEURTYPE/Amonecole/ > /home/netlogon/scripts/groups/DomainUsers.txt
+            chmod 644 /home/netlogon/scripts/groups/DomainUsers.txt
             cp freespace/FreeSpace.vbs /home/netlogon/scripts
+            ;;
          2)
-            cat freespace/DomainUsers.txt | sed -e s/X_SERVEURTYPE/Scribe/ >
-            /home/netlogon/scripts/groups
-            chmod 644 /home/netlogon/scripts/groups
+            cat freespace/DomainUsers.txt | sed -e s/X_SERVEURTYPE/Scribe/ > /home/netlogon/scripts/groups/DomainUsers.txt
+            chmod 644 /home/netlogon/scripts/groups/DomainUsers.txt
             cp freespace/FreeSpace.vbs /home/netlogon/scripts
+            ;;
          *)
             echo "Choix incorrect"
 esac
