@@ -1,0 +1,1 @@
+cmd,%SystemRoot%\System32\WScript.exe \\X_SERVEURTYPE\netlogon\scripts\FreeSpace.vbs,NOWAIT

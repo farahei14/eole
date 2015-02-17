@@ -1,0 +1,2 @@
+# purge des /home/<user>/.Config/Application Data tout les soirs à 19h
+0 19 * * * root [ -x /root/utils/purge.sh ] && sh /root/utils/purge.sh

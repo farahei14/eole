@@ -1,0 +1,7 @@
+/var/log/purge/purge.log {
+	monthly
+	rotate 4
+	missingok
+	compress
+	dateext
+}
